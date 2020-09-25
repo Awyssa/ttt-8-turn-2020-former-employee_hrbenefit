@@ -27,5 +27,9 @@ def position_taken?(board, index)
 end
 
 def turn(board, index)
-
+  puts "Please enter 1-9:"
+  input = gets.strip
+  input_to_index
+  
+  
 end
