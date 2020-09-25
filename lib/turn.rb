@@ -18,6 +18,9 @@ def valid_move?(board, index)
   return open
 end
 
+def move(board, index)
+end
+
 
 def turn(board)
 
