@@ -11,9 +11,9 @@ def input_to_index(user_input)
 end
 
 def valid_move?(board, index)
-  open = true
-  if board[index] == " " || board[index] == ""
-    open = false
+  open = false
+  if board[index] == "" || board[index] == " "
+    open = true
   end
   return open
 end
