@@ -11,16 +11,15 @@ def input_to_index(user_input)
 end
 
 def valid_move?(board, index)
-  taken = nil
-  if (board[index] == " " || board[index] == "" || board[index] ==nil)
-     taken = false
-   else
-     taken = true
+  open = false
+  if board[index] == "" || board[index] == " "
+    open = true
   end
-  taken
+  return open
 end
 
 def move(board, index, player)
+  board[index] = player
 end
 
 
