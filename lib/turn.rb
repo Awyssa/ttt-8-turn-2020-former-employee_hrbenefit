@@ -10,6 +10,14 @@ def input_to_index(user_input)
   index = user_input.to_i - 1
 end
 
+def valid_move?(board, index)
+  open = false
+  if board[index] == " " || board[index] == ""
+    open = true
+  end
+  return open
+end
+
 
 def turn(board)
 
