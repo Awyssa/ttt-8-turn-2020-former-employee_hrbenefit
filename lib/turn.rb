@@ -11,11 +11,10 @@ def input_to_index(user_input)
 end
 
 def valid_move?(board, index)
-  open = false
   if board[index] == "" || board[index] == " "
-    open = true
-  end
-  return open
+    return true
+  else
+    return false
 end
 
 def move(board, index, player)
